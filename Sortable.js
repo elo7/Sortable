@@ -4,7 +4,10 @@
  * @license MIT
  */
 
-define('sortable', [], function sortableFactory() {
+(function sortableModule(factory) {
+	"use strict";
+	define('sortable', [], factory);
+})(function sortableFactory() {
 	"use strict";
 
 	if (typeof window === "undefined" || !window.document) {
